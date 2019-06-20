@@ -13,6 +13,7 @@
 		999EF43B22BB2A5100B9311F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999EF43A22BB2A5100B9311F /* Assets.xcassets */; };
 		999EF43E22BB2A5100B9311F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999EF43C22BB2A5100B9311F /* LaunchScreen.storyboard */; };
 		999EF44122BB2A5100B9311F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 999EF44022BB2A5100B9311F /* main.m */; };
+		999EF44C22BB2A9800B9311F /* HRAttributedLinkTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 999EF44B22BB2A9800B9311F /* HRAttributedLinkTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		999EF43D22BB2A5100B9311F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		999EF43F22BB2A5100B9311F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		999EF44022BB2A5100B9311F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		999EF44A22BB2A9800B9311F /* HRAttributedLinkTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRAttributedLinkTextView.h; sourceTree = "<group>"; };
+		999EF44B22BB2A9800B9311F /* HRAttributedLinkTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRAttributedLinkTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		999EF43022BB2A5000B9311F /* AttribuedLinkTextDemo */ = {
 			isa = PBXGroup;
 			children = (
+				999EF44A22BB2A9800B9311F /* HRAttributedLinkTextView.h */,
+				999EF44B22BB2A9800B9311F /* HRAttributedLinkTextView.m */,
 				999EF43122BB2A5000B9311F /* AppDelegate.h */,
 				999EF43222BB2A5000B9311F /* AppDelegate.m */,
 				999EF43422BB2A5000B9311F /* ViewController.h */,
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				999EF43622BB2A5000B9311F /* ViewController.m in Sources */,
+				999EF44C22BB2A9800B9311F /* HRAttributedLinkTextView.m in Sources */,
 				999EF44122BB2A5100B9311F /* main.m in Sources */,
 				999EF43322BB2A5000B9311F /* AppDelegate.m in Sources */,
 			);
