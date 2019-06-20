@@ -14,6 +14,11 @@
 
 @implementation HRAttributedLinkTextView
 
+
+
+/**
+ 禁用UITextView的长按弹出按钮事件
+ */
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender{
     // 返回NO为禁用，YES为开启
     // 粘贴
@@ -33,6 +38,12 @@
     return [super canPerformAction:action withSender:sender];
 }
 
+
+/**
+ 取消UITextView的编辑事件，避免弹出键盘
+
+ @return NO
+ */
 - (BOOL)canBecomeFirstResponder {
     return NO;
 }
@@ -50,6 +61,10 @@
     [self setDefaultValues];
 }
 
+
+/**
+ 设置默认属性
+ */
 - (void)setDefaultValues{
     _defaultLinkTextFont = [UIFont systemFontOfSize:14];
     _defaultLinkTextColor = [UIColor blueColor];
@@ -96,6 +111,10 @@
     return YES;
 }
 
+
+/**
+ 禁用UITextView的长按手势
+ */
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
 //    NSLog(@"%@",gestureRecognizer);
     if ([gestureRecognizer isKindOfClass:[UILongPressGestureRecognizer class]]) {
